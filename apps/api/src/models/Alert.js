@@ -6,7 +6,7 @@ const alertSchema = new mongoose.Schema(
     tenantId: { type: String, index: true },
     type: {
       type: String,
-      enum: ['weather', 'fx', 'crypto', 'stocks', 'news', 'emergency'],
+      enum: ['weather', 'fx', 'crypto', 'stocks', 'news', 'emergency', 'moho', 'trips', 'mosca', 'larvas'],
       required: true
     },
     name: { type: String, required: true },
