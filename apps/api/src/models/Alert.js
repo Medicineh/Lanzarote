@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { ALERT_TYPES } from '../constants/alertTypes.js';
 
 const alertSchema = new mongoose.Schema(
   {
@@ -6,7 +7,7 @@ const alertSchema = new mongoose.Schema(
     tenantId: { type: String, index: true },
     type: {
       type: String,
-      enum: ['weather', 'fx', 'crypto', 'stocks', 'news', 'emergency', 'moho', 'trips', 'mosca', 'larvas'],
+      enum: ALERT_TYPES,
       required: true
     },
     name: { type: String, required: true },
