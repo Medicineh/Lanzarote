@@ -1,0 +1,16 @@
+{
+  "name": "@lanzarote/worker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/worker.js",
+    "test": "echo 'no worker tests yet'",
+    "lint": "echo 'lint worker skipped'"
+  },
+  "dependencies": {
+    "bullmq": "^5.10.4",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.5.3",
+    "node-fetch": "^3.3.2"
+  }
+}
